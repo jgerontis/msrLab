@@ -66,7 +66,7 @@ if not token:
     raise SystemExit("Set the GITHUB_TOKEN environment variable before running this script.")
 
 # desired file extensions for rootbeer repo:
-extensions = ['.java', '.kt']
+extensions = ['.java']
 
 dictfiles = dict()
 countfiles(dictfiles, token, repo, extensions)
