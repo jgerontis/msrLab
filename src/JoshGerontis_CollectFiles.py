@@ -24,7 +24,8 @@ def github_auth(url, lsttoken, ct):
 # @dictFiles, empty dictionary of files
 # @lstTokens, GitHub authentication tokens
 # @repo, GitHub repo
-def countfiles(dictfiles, lsttokens, repo):
+# @extensions, list of desired file extensions (e.g., ['.java', '.kt'])
+def countfiles(dictfiles, lsttokens, repo, extensions):
     ipage = 1  # url page counter
     ct = 0  # token counter
 
@@ -47,6 +48,9 @@ def countfiles(dictfiles, lsttokens, repo):
                 filesjson = shaDetails['files']
                 for filenameObj in filesjson:
                     filename = filenameObj['filename']
+                    # if file extension not desired, skip it
+                    if not any(filename.endswith(ext) for ext in extensions):
+                        continue
                     dictfiles[filename] = dictfiles.get(filename, 0) + 1
                     print(filename)
             ipage += 1
@@ -59,17 +63,17 @@ repo = 'scottyab/rootbeer'
 # repo = 'k9mail/k-9' # This repo is commit heavy. It takes long to finish executing
 # repo = 'mendhak/gpslogger'
 
+# using github token as an env var so I never have to worry about committing it to the repo
+token = os.environ.get("GITHUB_TOKEN", "").strip()
+if not token:
+    raise SystemExit("Set the GITHUB_TOKEN environment variable before running this script.")
+lstTokens = [token]
 
-# put your tokens here
-# Remember to empty the list when going to commit to GitHub.
-# Otherwise they will all be reverted and you will have to re-create them
-# I would advise to create more than one token for repos with heavy commits
-lstTokens = ["fd02a694b606c4120b8ca7bbe7ce29229376ee",
-                "16ce529bdb32263fb90a392d38b5f53c7ecb6b",
-                "8cea5715051869e98044f38b60fe897b350d4a"]
+# desired file name for rootbeer repo:
+extensions = ['.java', '.kt', '.c', '.cpp', '.h']
 
 dictfiles = dict()
-countfiles(dictfiles, lstTokens, repo)
+countfiles(dictfiles, lstTokens, repo, extensions)
 print('Total number of files: ' + str(len(dictfiles)))
 
 file = repo.split('/')[1]
