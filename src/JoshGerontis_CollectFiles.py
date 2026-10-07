@@ -66,7 +66,7 @@ if not token:
     raise SystemExit("Set the GITHUB_TOKEN environment variable before running this script.")
 
 # desired file extensions for rootbeer repo:
-extensions = ['.java', '.kt', '.c', '.cpp', '.h']
+extensions = ['.java', '.kt']
 
 dictfiles = dict()
 countfiles(dictfiles, token, repo, extensions)
@@ -74,7 +74,7 @@ print('Total number of files: ' + str(len(dictfiles)))
 
 file = repo.split('/')[1]
 # change this to the path of your file
-fileOutput = 'data/file_touches_count' + file + '.csv'
+fileOutput = 'data/file_touches_' + file + '.csv'
 rows = ["Filename", "Touches"]
 fileCSV = open(fileOutput, 'w')
 writer = csv.writer(fileCSV)

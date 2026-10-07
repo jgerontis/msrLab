@@ -43,15 +43,12 @@ def get_edit_authors_for_file(repo, filename, token):
             edit_authors[author].append(date)
     return edit_authors
 
-# unique list of authors
-authors = []
-
 # store each file's edits by whom and when
 # e.g. {'example.java': {'author1': ['2024-01-01', '2024-01-02'], 'author2': ['2024-01-03']}}
 file_edits = {}
 
 # get list of files from file_touches_count CSV
-file_touches_count = 'data/file_touches_count_' + repo.split('/')[1] + '.csv'    
+file_touches_count = 'data/file_touches_' + repo.split('/')[1] + '.csv'    
 files = []
 with open(file_touches_count, 'r') as f:
     reader = csv.reader(f)
@@ -63,9 +60,6 @@ with open(file_touches_count, 'r') as f:
 for file in files:
     edit_authors = get_edit_authors_for_file(repo, file, token)
     file_edits[file] = edit_authors
-    for author in edit_authors:
-        if author not in authors:
-            authors.append(author)
     print(f"File: {file}")
     for author, dates in edit_authors.items():
         print(f"  Author: {author}")

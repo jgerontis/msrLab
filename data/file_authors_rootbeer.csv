@@ -55,8 +55,6 @@ rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeerNative.java,Matthew Roll
 rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeerNative.java,Matthew Rollings,2015-06-26
 rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeerNative.java,Scott Alexander-Bown,2021-05-08
 rootbeerlib/src/main/java/com/scottyab/rootbeer/RootBeerNative.java,Scott Alexander-Bown,2015-06-26
-rootbeerlib/src/main/cpp/toolChecker.cpp,Scott Alexander-Bown,2021-05-22
-rootbeerlib/src/main/cpp/toolChecker.h,Scott Alexander-Bown,2021-05-22
 app/src/main/java/com/scottyab/rootbeer/sample/CheckRootTask.java,Scott Alexander-Bown,2021-05-08
 app/src/main/java/com/scottyab/rootbeer/sample/CheckRootTask.java,Scott Alexander-Bown,2016-07-01
 app/src/main/java/com/scottyab/rootbeer/sample/CheckRootTask.java,Scott Alexander-Bown,2016-07-01
@@ -138,25 +136,6 @@ rootbeerlib/src/androidTest/java/com/scottyab/rootbeer/ApplicationTest.java,Dani
 rootbeerlib/src/androidTest/java/com/scottyab/rootbeer/ApplicationTest.java,Daniel Kutik,2019-11-16
 rootbeerlib/src/androidTest/java/com/scottyab/rootbeer/ApplicationTest.java,Frieder Bluemle,2017-05-11
 rootbeerlib/src/androidTest/java/com/scottyab/rootbeer/ApplicationTest.java,Scott Alexander-Bown,2015-06-26
-rootbeerlib/src/main/jni/toolChecker.cpp,Scott Alexander-Bown,2021-05-22
-rootbeerlib/src/main/jni/toolChecker.cpp,Frieder Bluemle,2017-05-11
-rootbeerlib/src/main/jni/toolChecker.cpp,matthew,2017-03-13
-rootbeerlib/src/main/jni/toolChecker.cpp,matthew,2017-03-13
-rootbeerlib/src/main/jni/toolChecker.h,Scott Alexander-Bown,2021-05-22
-rootbeerlib/src/main/jni/toolChecker.h,Frieder Bluemle,2017-05-11
-rootbeerlib/src/main/jni/toolChecker.h,matthew,2017-03-13
-rootbeerlib/jni/toolChecker.cpp,matthew,2017-03-13
-rootbeerlib/jni/toolChecker.cpp,aippisch,2016-09-16
-rootbeerlib/jni/toolChecker.cpp,Matthew Rollings,2015-06-30
-rootbeerlib/jni/toolChecker.cpp,Matthew Rollings,2015-06-30
-rootbeerlib/jni/toolChecker.cpp,Matthew Rollings,2015-06-26
-rootbeerlib/jni/toolChecker.cpp,Scott Alexander-Bown,2015-06-30
-rootbeerlib/jni/toolChecker.cpp,Scott Alexander-Bown,2015-06-26
-rootbeerlib/jni/toolChecker.h,matthew,2017-03-13
-rootbeerlib/jni/toolChecker.h,Matthew Rollings,2015-06-30
-rootbeerlib/jni/toolChecker.h,Matthew Rollings,2015-06-30
-rootbeerlib/jni/toolChecker.h,Matthew Rollings,2015-06-26
-rootbeerlib/jni/toolChecker.h,Scott Alexander-Bown,2015-06-26
 app/src/main/java/com/scottyab/rootchecker/RootCheck.java,Scott Alexander-Bown,2015-06-26
 app/src/main/java/com/scottyab/rootchecker/RootCheck.java,Scott Alexander-Bown,2015-06-19
 app/src/main/java/com/scottyab/rootchecker/RootCheck.java,Scott Alexander-Bown,2015-06-19
@@ -170,17 +149,9 @@ app/src/main/java/com/scottyab/rootchecker/MainActivity.java,Scott Alexander-Bow
 app/src/main/java/com/scottyab/rootchecker/MainActivity.java,Scott Alexander-Bown,2015-06-19
 app/src/main/java/com/scottyab/rootchecker/MainActivity.java,Matthew Rollings,2015-06-26
 app/src/main/java/com/scottyab/rootchecker/MainActivity.java,Matthew Rollings,2015-06-19
-app/jni/toolChecker.cpp,Scott Alexander-Bown,2015-06-26
-app/jni/toolChecker.cpp,Matthew Rollings,2015-06-19
-app/jni/toolChecker.h,Scott Alexander-Bown,2015-06-26
-app/jni/toolChecker.h,Matthew Rollings,2015-06-19
 app/src/main/java/com/scottyab/rootchecker/RootCheckNative.java,Scott Alexander-Bown,2015-06-26
 app/src/main/java/com/scottyab/rootchecker/RootCheckNative.java,Matthew Rollings,2015-06-19
 app/src/main/java/com/scottyab/rootchecker/RootCheckNative.java,Matthew Rollings,2015-06-19
-app/jni/rootChecker.cpp,Matthew Rollings,2015-06-19
-app/jni/rootChecker.cpp,Matthew Rollings,2015-06-19
-app/jni/rootChecker.h,Matthew Rollings,2015-06-19
-app/jni/rootChecker.h,Matthew Rollings,2015-06-19
 app/src/androidTest/java/com/scottyab/rootchecker/ApplicationTest.java,Scott Alexander-Bown,2015-06-26
 app/src/androidTest/java/com/scottyab/rootchecker/ApplicationTest.java,Scott Alexander-Bown,2015-06-19
 app/src/main/java/com/scottyab/rootchecker/util/QLog.java,Scott Alexander-Bown,2015-06-26
