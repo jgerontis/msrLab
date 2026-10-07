@@ -25,7 +25,7 @@ earliest_date = min(datetime.strptime(row[2], "%Y-%m-%d") for row in data)
 first_week_start = earliest_date - timedelta(days=earliest_date.weekday())
 for row in data:
     row.append(get_week(row[2], first_week_start))
-files = list(set(row[0] for row in data))
+files = sorted(set(row[0] for row in data))
 weeks = list(set(row[3] for row in data))
 authors = list(set(row[1] for row in data))
 
